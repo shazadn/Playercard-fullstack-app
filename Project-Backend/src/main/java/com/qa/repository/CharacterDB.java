@@ -11,7 +11,7 @@ import javax.transaction.Transactional.TxType;
 import com.qa.model.Character;
 
 @Transactional(value = TxType.SUPPORTS)
-public class CharacterDB {
+public class CharacterDB implements CharacterRepository {
 	@PersistenceContext(unitName = "myPU")
 	private EntityManager em;
 

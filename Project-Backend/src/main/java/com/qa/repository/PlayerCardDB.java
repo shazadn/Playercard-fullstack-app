@@ -11,11 +11,11 @@ import javax.transaction.Transactional.TxType;
 import com.qa.model.PlayerCard;
 
 @Transactional(value = TxType.SUPPORTS)
-public class PlayerCardDB implements PlayerCardRepository{
+public class PlayerCardDB implements PlayerCardRepository {
 
 	@PersistenceContext(unitName = "myPU")
 	private EntityManager em;
-	
+
 	@Transactional(value = TxType.REQUIRED)
 	public PlayerCard create(PlayerCard pCard) {
 		em.persist(pCard);
@@ -23,7 +23,7 @@ public class PlayerCardDB implements PlayerCardRepository{
 	}
 
 	public PlayerCard read(int id) {
-		PlayerCard pCard = em.find(PlayerCard.class,id);
+		PlayerCard pCard = em.find(PlayerCard.class, id);
 		return pCard;
 	}
 
@@ -34,7 +34,6 @@ public class PlayerCardDB implements PlayerCardRepository{
 		return list;
 	}
 
-	
 	@Transactional(value = TxType.REQUIRED)
 	public PlayerCard update(int id, PlayerCard newInfo) {
 		PlayerCard pCard = read(id);
@@ -47,7 +46,7 @@ public class PlayerCardDB implements PlayerCardRepository{
 	@Transactional(value = TxType.REQUIRED)
 	public void delete(int id) {
 		em.remove(read(id));
-		
+
 	}
 
 }
