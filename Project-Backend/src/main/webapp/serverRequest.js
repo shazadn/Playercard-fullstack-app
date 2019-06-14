@@ -11,7 +11,7 @@ function fetchData(url, method, body) {
                 }
             }
         };
-        req.open(method, "http://localhost:8080/IndividualProject-1.0/api/" + url);
+        req.open(method, "http://35.246.82.158:8080/IndividualProject-1.0/api/" + url);
         req.setRequestHeader("Content-Type", "application/json")
         req.send(body);
     });
