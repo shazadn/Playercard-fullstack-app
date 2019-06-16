@@ -1,0 +1,13 @@
+com\qa\rest\UserEndpoint.class
+com\qa\rest\JAXRSConfiguration.class
+com\qa\model\PlayerCard.class
+com\qa\repository\UserRepository.class
+com\qa\rest\PlayerCardEndpoint.class
+com\qa\model\User.class
+com\qa\repository\CharacterDB.class
+com\qa\repository\CharacterRepository.class
+com\qa\model\Character.class
+com\qa\repository\UserDB.class
+com\qa\repository\PlayerCardRepository.class
+com\qa\rest\CharacterEndpoint.class
+com\qa\repository\PlayerCardDB.class

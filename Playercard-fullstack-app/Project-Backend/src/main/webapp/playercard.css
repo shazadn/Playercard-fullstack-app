@@ -1,0 +1,94 @@
+body {
+  background: url('images/main_menu_background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#card-background {
+  background: url('images/card_background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.page{
+  text-align: center;
+}
+
+.register{
+    margin:25px;
+}
+
+.registerbtn{
+    margin:5px;
+    padding: 20px;
+}
+
+.loginbtn{
+    margin: 0;
+    padding: 0;  
+}
+
+.logOutbtn{
+    margin: 0;
+    padding: 0;
+}  
+
+.playercard-header{
+    text-align: center;
+}
+.namefield{
+ margin: 3px;
+  padding: 20px;
+}
+
+.gamertagfield{
+    margin: 3px;
+  padding: 20px;
+}
+.characterfield{
+ margin: 3px;
+  padding: 20px;
+}
+
+h1{
+  color:white;
+}
+
+.table-bordered{
+  color:blanchedalmond;
+}
+
+.page h6{
+  color:blanchedalmond;
+}
+
+.playercard-info{
+  margin: 100px;
+  white-space: nowrap;
+  color:white;
+}
+
+#pcname{
+  margin:100px;
+  text-align: left;
+  padding: 100px;
+}
+
+#pctag{
+  text-align: center;
+  padding: 100px;
+}
+
+#pcchar{
+  text-align: right;
+  padding: 100px;
+}
+
+.returnmsg{
+  margin : 30px;
+  color:red;
+}
+

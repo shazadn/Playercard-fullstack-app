@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="playercard.css">
+</head>
+<title>Home</title>
+
+<body>
+    <div class="Background">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="Logo" style="width:70px;">
+            </a>
+            <a href="#" class="navbar-brand">Welcome</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="playercard.html">Create</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="view.html">View</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    </nav>
+    <h1 class="display-3">View</h1>
+    <div class="btn-group btn-group-toggle">
+        <button id="viewPlayers" class="btn btn-secondary" onclick="viewPlayerCards()">View players</button>
+    </div>
+
+    <div class="players">
+        <table id="playercard-titles" class="table table-bordered">
+            <thread>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Gamertag</th>
+                    <th scope="col">Character</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thread>
+        </table>
+        <table id="players-table" class="table table-bordered">
+          
+            </table>
+    </div>
+
+    <script src="serverRequest.js"></script>
+    <script src="view.js"></script>
+
+</body>
+
+</html>

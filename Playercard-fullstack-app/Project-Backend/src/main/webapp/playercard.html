@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="playercard.css">
+</head>
+<title>playercard</title>
+
+<body>
+    <div class="Background">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="Logo" style="width:70px;">
+            </a>
+            <a href="#" class="navbar-brand">Welcome</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="playercard.html">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="view.html">View</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    </nav>
+    <div class="playercard-header">
+        <h1 class="display-4">Enter your playercard details:</h1>
+    </div>
+    <div class="page">
+        <h6>Enter your name</h6>
+        <div class="namefield">
+            <input id="Name" type="text" oninput="setName(this)"> </input><br>
+        </div>
+        <h6>Enter your gamertag</h6>
+        <div class="gamertagfield">
+            <input id="GamerTag" type="text" oninput="setGamerTag(this)"></input><br>
+        </div>
+        <h6>Enter your favourite character</h6>
+        <div class="characterfield">
+            <input id="Character" type="text" oninput="setCharacter(this)"></input><br>
+        </div>
+        <div class="savebtn">
+            <button id="Save" class="btn btn-primary" onclick="newPlayer()">Save</button>
+        </div>
+    </div>
+    <script src="serverRequest.js"></script>
+    <script src="playercard.js"></script>
+</body>
+
+</html>
