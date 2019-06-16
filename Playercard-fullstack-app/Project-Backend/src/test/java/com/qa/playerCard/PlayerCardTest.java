@@ -7,7 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.qa.model.PlayerCard;
-import com.qa.model.User;
+
 
 public class PlayerCardTest {
 
