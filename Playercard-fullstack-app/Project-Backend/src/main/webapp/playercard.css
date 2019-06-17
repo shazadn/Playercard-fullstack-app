@@ -13,29 +13,6 @@ body {
   -o-background-size: cover;
 }
 
-.page{
-  text-align: center;
-}
-
-.register{
-    margin:25px;
-}
-
-.registerbtn{
-    margin:5px;
-    padding: 20px;
-}
-
-.loginbtn{
-    margin: 0;
-    padding: 0;  
-}
-
-.logOutbtn{
-    margin: 0;
-    padding: 0;
-}  
-
 .playercard-header{
     text-align: center;
 }
