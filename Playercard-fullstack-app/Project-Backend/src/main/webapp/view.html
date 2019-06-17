@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="playercard.css">
 </head>
 <title>Home</title>
@@ -33,7 +33,10 @@
             </div>
     </div>
     </nav>
-    <h1 class="display-3">View</h1>
+    <blockquote class="blockquote">
+        <p class="view-message">When you view all the cards you are able to edit and delete your player card.</p>
+    </blockquote>
+    
     <div class="btn-group btn-group-toggle">
         <button id="viewPlayers" class="btn btn-secondary" onclick="viewPlayerCards()">View players</button>
     </div>
@@ -51,8 +54,8 @@
             </thread>
         </table>
         <table id="players-table" class="table table-bordered">
-          
-            </table>
+
+        </table>
     </div>
 
     <script src="serverRequest.js"></script>

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="playercard.css">
 </head>
 <title>playercard</title>
@@ -37,20 +37,25 @@
         <h1 class="display-4">Enter your playercard details:</h1>
     </div>
     <div class="page">
-        <h6>Enter your name</h6>
-        <div class="namefield">
-            <input id="Name" type="text" oninput="setName(this)"> </input><br>
-        </div>
-        <h6>Enter your gamertag</h6>
-        <div class="gamertagfield">
-            <input id="GamerTag" type="text" oninput="setGamerTag(this)"></input><br>
-        </div>
-        <h6>Enter your favourite character</h6>
-        <div class="characterfield">
-            <input id="Character" type="text" oninput="setCharacter(this)"></input><br>
-        </div>
-        <div class="savebtn">
-            <button id="Save" class="btn btn-primary" onclick="newPlayer()">Save</button>
+        <div class="inputs-field">
+
+            <div class="namefield">
+                <h6>Enter your name</h6>
+                <input id="inName" type="text" oninput="setName(this)"> </input><br>
+            </div>
+
+            <div class="gamertagfield">
+                <h6>Enter your gamertag</h6>
+                <input id="inTag" type="text" oninput="setGamerTag(this)"></input><br>
+            </div>
+
+            <div class="characterfield">
+                <h6>Enter your favourite character</h6>
+                <input id="inChar" type="text" oninput="setCharacter(this)"></input><br>
+            </div>
+            <div class="savebtn">
+                <button id="Save" class="btn btn-primary" onclick="newPlayer()">Save</button>
+            </div>
         </div>
     </div>
     <script src="serverRequest.js"></script>
